@@ -23,6 +23,11 @@ class BlogPost(models.Model):
     def __str__(self):
         return self.title 
 
+class BlogImage(models.Model):
+    blog_post = models.ForeignKey(BlogPost, on_delete = models.CASCADE, related_name = 'blog_images')
+    image = models.ImageField(upload_to='blog_images/')
+    caption = models.CharField(max_length=200, blank=True)
+
 class Comment(models.Model):
     author = models.CharField(max_length=60)
     content = models.TextField()
