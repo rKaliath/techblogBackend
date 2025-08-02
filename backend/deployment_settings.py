@@ -64,7 +64,7 @@ LOGGING = {
 
 
 
-ADMINS = [("Tech blogger", "YOUREMAIL@EMAIL.com")]
+ADMINS = [("Tech blogger", "rensikaliath24@proton.me")]
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'

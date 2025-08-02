@@ -72,25 +72,17 @@ TEMPLATES = [
     },
 ]
 
-CORS_ALLOW_ALL_ORIGINS = True
+#CORS_ALLOW_ALL_ORIGINS = False
 
-CORS_ALLOW_CREDENTIALS = True
+#CORS_ALLOW_CREDENTIALS = True
 
 WSGI_APPLICATION = 'backend.wsgi.application'
 
 CORS_ALLOWED_ORIGINS = [
-    'http://127.0.0.1:8000'
+    'http://localhost:5173'
 ]
 
-STORAGES = {
-    "default": {
-        "BACKEND": "django.core.files.storage.FileSystemStorage",
-    },
-    "staticfiles": {
 
-        "BACKEND": "whitenoise.storage.CompressedStaticFilesStorage",
-    },
-}
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
