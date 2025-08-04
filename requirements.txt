@@ -10,4 +10,4 @@ psycopg2==2.9.10
 pyspark==3.5.4
 sqlparse==0.5.3
 whitenoise==6.9.0
-uvicorn
+uvicorn==0.30.6
